@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="w-full h-full">
+<html lang="en" class="w-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="w-full h-full">
-    <div class="flex justify-center items-center w-full h-full">
+<body class="w-full h-full flex flex-col">
+    <div class="flex justify-center items-center w-full h-[80vh]">
         <svg width="50%" height="auto" viewBox="0 0 26499 7000" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect class="animate__animated animate__fadeInDown animate__delay-3s" x="15499" width="2500" height="7000" fill="#003399"/>
             <ellipse class="animate__animated animate__fadeInLeft" cx="3499.74" cy="3500" rx="3499.74" ry="3500" fill="#003399"/>
@@ -33,5 +32,42 @@
             <rect class="animate__animated animate__fadeInUp animate__delay-4s" x="19499" y="3500" width="3000" height="3500" fill="#003399"/>
         </svg>
     </div>
+    <div class="w-full flex justify-center items-center">
+        <div class="max-w-[87%] md:max-w-[720px] h-full">
+            <div class="flex text-xl md:text-2xl text-center font-bold text-[#003399] flex-col justify-between items-center h-full">
+                <div class="mb-10" data-aos="fade-down">
+                    OSIN is a non-profit organization dedicated to promoting transparency and accountability in politics through the use of open source data and analysis. 
+                </div>
+                <div class="mb-10" data-aos="fade-down">
+                    We believe that open access to data and the ability to analyze it are key to a healthy and democratic society.
+                </div>
+                <div class="mb-10" data-aos="fade-down">
+                     That's why we use technology and techniques to collect, process, and analyze political data from a variety of sources.
+                </div>
+                <div class="mb-10" data-aos="fade-down">
+                    Whether it's tracking voting patterns, monitoring campaign spending, or analyzing public opinion, we aim to provide insights that are accessible, actionable, and impactful.
+                </div>
+                <div class="mb-10" data-aos="fade-down">
+                    Our work is guided by a commitment to impartiality, transparency, and open collaboration. We work with experts in the fields of data science, politics, and journalism to produce high-quality analysis that is free from bias and accessible to all
+                </div>
+                <div class="mb-10" data-aos="fade-down">
+                    Our research is published under open licenses, so that others can build upon our work and advance the field.
+                </div>
+                <div class="mb-10 pb-[100px]" data-aos="fade-down">
+                    If you're interested in politics, data, or the role of technology in society, we invite you to get involved. Join our community of volunteers, activists, and supporters to help us drive change and make a positive impact. Together, we can build a more informed and engaged citizenry, and a better future for all.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex justify-center items-center">
+        <canvas id="myChart" style="width:100%; max-width: 100%; height: 1000px; min-height: 1000px;"></canvas>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
